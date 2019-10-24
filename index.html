@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LPNU POLL</title>
+</head>
+<body>
+    <form>
+        <select onchange="with (this) if (selectedIndex)
+            document.getElementById ('out').value = options [selectedIndex].value">
+            <option disabled>Оберіть інститут</option>
+            <option id="igsn" value="1">Інститут гуманітарних та соціальних наук</option>
+            <option id="iarh" value="2">Інститут архітектури</option>
+            <option id="ibid" value="3">Інститут будівництва та інженерії довкілля</option>
+            <option id="igdg" value="4">Інститут геодезії</option>
+            <option id="idn"  value="5">Інститут дистанційного навчання</option>
+            <option id="istr" value="6">Інститут сталого розвитку ім. В.Чорновола</option>
+            <option id="inem" value="7">Інститут економіки і менеджменту</option>
+            <option id="iesk" value="8">Інститут енергетики та систем керування</option>
+            <option id="iimt" value="9">Інститут інженерної механіки та транспорту</option>
+            <option id="ikni" value="10">Інститут комп'ютерних наук та інформаційних технологій</option>
+            <option id="ikta" value="11">Інститут комп'ютерних технологій, автоматики та метрології</option>
+            <option id="ippt" value="12">Інститут підприємництва та перспективних технологій</option>
+            <option id="iaps" value="13">Інститут адміністрування та післядипломної освіти</option>
+            <option id="ippi" value="14">Інститут права, психології та інноваційної освіти</option>
+            <option id="ipmf" value="15">Інститут прикладної математики та фундаментальних наук</option>
+            <option id="itre" value="16">Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
+            <option id="ihht" value="17">Інститут хімії та хімічних технологій</option>
+        </select>
+        <input id="out">
+    </form>
+    
+    <script src="index.js"></script>
+</body>
+</html>
