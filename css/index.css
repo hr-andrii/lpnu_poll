@@ -118,13 +118,20 @@ body{
     margin-bottom: 30px;
 }
 .poll form div{
-    margin-left: 30%;
+    margin-left: 30.5%;
 }
 
 .field{
     margin: 0 auto;
     display: block;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 40%;
+    height: 50px;
+}
+.field_q{
+    margin: 0 auto;
+    display: block;
     border-radius: 10px;
     width: 40%;
     height: 50px;
@@ -140,6 +147,7 @@ body{
 .field_name{
     margin: auto;
     display: block;
+    margin-top: 5px;
     margin-bottom: 20px;
     border-radius: 10px;
     width: 40%;
@@ -150,6 +158,11 @@ body{
     margin-right: 4.2%;
     font-family: 'Josefin Sans', sans-serif;
 }
+form div {
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 1199px) {
     .value {
         margin-right: 3.9%;
@@ -192,7 +205,10 @@ p{
 }
 .slider {
 
-    width: 40%;
+    width: 39%;
+    position: absolute;
+    margin-bottom: 15px;
+    margin-top: -23px;
     margin-left: 30%;
     display: inline-block;
     height: 15px;
@@ -218,5 +234,4 @@ p{
     border-radius: 10px;
     margin: auto;
     color: black;
-    margin-top: 20px;
 }
