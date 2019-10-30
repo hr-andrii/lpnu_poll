@@ -4,34 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LPNU POLL</title>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
 </head>
 <body>
-    <form>
-        <select onchange="with (this) if (selectedIndex)
-            document.getElementById ('out').value = options [selectedIndex].value">
-            <option disabled>Оберіть інститут</option>
-            <option id="igsn" value="1">Інститут гуманітарних та соціальних наук</option>
-            <option id="iarh" value="2">Інститут архітектури</option>
-            <option id="ibid" value="3">Інститут будівництва та інженерії довкілля</option>
-            <option id="igdg" value="4">Інститут геодезії</option>
-            <option id="idn"  value="5">Інститут дистанційного навчання</option>
-            <option id="istr" value="6">Інститут сталого розвитку ім. В.Чорновола</option>
-            <option id="inem" value="7">Інститут економіки і менеджменту</option>
-            <option id="iesk" value="8">Інститут енергетики та систем керування</option>
-            <option id="iimt" value="9">Інститут інженерної механіки та транспорту</option>
-            <option id="ikni" value="10">Інститут комп'ютерних наук та інформаційних технологій</option>
-            <option id="ikta" value="11">Інститут комп'ютерних технологій, автоматики та метрології</option>
-            <option id="ippt" value="12">Інститут підприємництва та перспективних технологій</option>
-            <option id="iaps" value="13">Інститут адміністрування та післядипломної освіти</option>
-            <option id="ippi" value="14">Інститут права, психології та інноваційної освіти</option>
-            <option id="ipmf" value="15">Інститут прикладної математики та фундаментальних наук</option>
-            <option id="itre" value="16">Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
-            <option id="ihht" value="17">Інститут хімії та хімічних технологій</option>
-        </select>
-        <input id="out">
-    </form>
-    
-    <script src="index.js"></script>
+    <div class="poll">
+        <a href="">
+            <h1 class="theme_of_page">Форма для оціювання якості викладання</h1>
+            <h1 class="name_of_univers">Національний університет "Львівська політехніка"</h1>
+            <img src="img/logo.png" alt="Логотип НУЛП, щоб перейти на сайт натисніть">
+
+        </a>
+        <form action="https://formspree.io/hr.andriygtr@gmail.com" method="POST">
+            <select class="field" name="institute" id="institute">
+                <option value="choose" disabled selected>Оберіть інститут</option>
+                <option value="igsn">Інститут гуманітарних та соціальних наук</option>
+                <option value="iarh">Інститут архітектури</option>
+                <option value="ibid">Інститут будівництва та інженерії довкілля</option>
+                <option value="igdg">Інститут геодезії</option>
+                <option value="istr">Інститут сталого розвитку ім. В.Чорновола</option>
+                <option value="inem">Інститут економіки і менеджменту</option>
+                <option value="iesk">Інститут енергетики та систем керування</option>
+                <option value="iimt">Інститут інженерної механіки та транспорту</option>
+                <option value="ikni">Інститут комп'ютерних наук та інформаційних технологій</option>
+                <option value="ikta">Інститут комп'ютерних технологій, автоматики та метрології</option>
+                <option value="ippt">Інститут підприємництва та перспективних технологій</option>
+                <option value="iapo">Інститут адміністрування та післядипломної освіти</option>
+                <option value="ippo">Інститут права, психології та інноваційної освіти</option>
+                <option value="imfn">Інститут прикладної математики та фундаментальних наук</option>
+                <option value="itre">Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
+                <option value="ihht">Інститут хімії та хімічних технологій</option>
+            </select>
+            <select class="field" name="specialty" id="specialty" required >
+            </select>
+            <select class="field" name="teacher" required >
+                <option disabled selected>Оберіть Викладача</option>
+                <option>Когут</option>
+                <option>Лукіянець</option>
+                <option>Матулка</option>
+            </select>
+            <textarea rows="5" cols="30" minlength="0" maxlength="200" class="field_text" name="Відгук" placeholder="Чи подобається вам якість викладання та чи актуальний матеріал викладається?" required></textarea>
+            <textarea rows="5" cols="30" minlength="0" maxlength="200" class="field_text" name="Відгук" placeholder="Яке ставлення викладача до студентів?" required></textarea>
+            <textarea rows="5" cols="30" minlength="0" maxlength="365" class="field_text" name="Відгук" placeholder="Коментар (0-365 символів)" ></textarea>
+            <div>
+                <p class="value">0</p>
+                <p class="value">1</p>
+                <p class="value">2</p>
+                <p class="value">3</p>
+                <p class="value">4</p>
+                <p class="value">5</p>
+                <p class="value">6</p>
+                <p class="value">7</p>
+                <p class="value">8</p>
+                <p class="value">9</p>
+                <p class="value">10</p>
+            </div>
+            <input type="range" name="Оцінка (0-10)" min="0" max="10" value="5" class="slider">
+            <br>
+            <button class="button" >Відправити</button>
+        </form>
+    </div>
+    <script src="js/index.js"></script>
 </body>
 </html>

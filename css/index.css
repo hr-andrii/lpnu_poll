@@ -1,0 +1,222 @@
+body{
+    background: linear-gradient(rgb(226, 219, 219),#1944bb);
+    height: 725px;
+}
+@media (min-width: 320px) {
+    body {
+        height: 920px;
+    }
+}
+@media (min-width: 370px) {
+    body {
+        height: 920px;
+    }
+}
+@media (min-width: 410px) {
+    body {
+        height: 938px;
+    }
+}
+@media (min-height: 811px) {
+    body {
+        height: 895px;
+    }
+}
+@media (min-height: 1024px) {
+    body {
+        height: 1026px;
+    }
+}
+@media (min-height: 1335px) {
+    body {
+        height: 1340px;
+    }
+}
+
+@media (min-width: 1090px) {
+    body {
+        height: 950px;
+    }
+}
+.theme_of_page
+{
+    margin-left: 20%;
+    margin-top: 80px;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.name_of_univers
+{
+    right: 0;
+    margin-right: 15%;
+    margin-top: 80px;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+}
+@media (max-width: 1500px) {
+    .theme_of_page
+    {
+        position: relative;
+    }
+}
+@media (max-width: 1200px) {
+    .theme_of_page
+    {
+        margin-left: 0;
+        margin-top: 40px;
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    .name_of_univers{
+        right: 34%;
+        margin: auto;
+        text-align: center;
+    }
+    .poll a img{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .theme_of_page
+    {
+        margin-left: 0;
+        margin-top: 40px;
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    .name_of_univers{
+        right: 4%;
+        margin: auto;
+        text-align: center;
+    }
+    .poll a img{
+        margin-top: 50px;
+    }
+}
+
+
+.logo img{
+    width: 100px;
+}
+.poll{
+    margin-top: 30px;
+}
+.poll img{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.poll form div{
+    margin-left: 30%;
+}
+
+.field{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 40%;
+    height: 50px;
+}
+.field_text{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 39.5%;
+    height: 50px;
+}
+.field_name{
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 40%;
+    height: 50px;
+}
+.value{
+    display: inline-block;
+    margin-right: 4.2%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+@media (max-width: 1199px) {
+    .value {
+        margin-right: 3.9%;
+    }
+}
+@media (max-width: 1024px) {
+    .value {
+        margin-right: 3.5%;
+    }
+}
+@media (max-width: 768px) {
+    .value {
+        margin-right: 2.9%;
+    }
+}
+@media (max-width: 414px) {
+    .value {
+        margin-right: 0.5%;
+    }
+}
+@media (max-width: 375px) {
+    .value {
+        margin-right: 0;
+    }
+}
+@media (max-width: 360px) {
+    .value {
+        margin-right: -0.2%;
+    }
+}
+@media (max-width: 320px) {
+    .value {
+        margin-right: -1%;
+    }
+}
+p{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+}
+.slider {
+
+    width: 40%;
+    margin-left: 30%;
+    display: inline-block;
+    height: 15px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+
+    transition: opacity .2s;
+}
+
+.button{
+    position: relative;
+    padding: 0.3em;
+    border: solid 1px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    width: 115px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    color: black;
+    margin-top: 20px;
+}
