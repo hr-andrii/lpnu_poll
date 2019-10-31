@@ -1,17 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
     <title>Document</title>
-    <script type="text/javascript">
-function handleSelect(elm)
-{
-window.location = elm.value+".html";
-}
-</script>
+
 </head>
 <body>
     <div class="poll">
@@ -20,55 +15,22 @@ window.location = elm.value+".html";
             <h1 class="name_of_univers">Національний університет "Львівська політехніка"</h1>
             <img src="img/logo.png" alt="Логотип НУЛП, щоб перейти на сайт натисніть">
         </a>
-        <form action="https://formspree.io/hr.andriygtr@gmail.com" method="POST">
-            <select class="field" name="institute" id="institute" onchange="window.location.href=this.value;">
-                <option value="choose" disabled selected>Оберіть інститут</option>
-                <option value="igsn">Інститут гуманітарних та соціальних наук</option>
-                <option value="iarh">Інститут архітектури</option>
-                <option value="ibid">Інститут будівництва та інженерії довкілля</option>
-                <option value="igdg">Інститут геодезії</option>
-                <option value="istr">Інститут сталого розвитку ім. В.Чорновола</option>
-                <option value="inem">Інститут економіки і менеджменту</option>
-                <option value="iesk">Інститут енергетики та систем керування</option>
-                <option value="iimt">Інститут інженерної механіки та транспорту</option>
-                <option value="ikni">Інститут комп'ютерних наук та інформаційних технологій</option>
-                <option value="ikta">Інститут комп'ютерних технологій, автоматики та метрології</option>
-                <option value="ippt">Інститут підприємництва та перспективних технологій</option>
-                <option value="iapo">Інститут адміністрування та післядипломної освіти</option>
-                <option value="ippo">Інститут права, психології та інноваційної освіти</option>
-                <option value="imfn">Інститут прикладної математики та фундаментальних наук</option>
-                <option value="itre">>Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
-                <option value="ihht">Інститут хімії та хімічних технологій</option>
+        <form action="accept.php" method="POST">
+            <select class="field" name="institute">
+                <option value="itre" selected>Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
             </select>
             <select class="field" name="specialty" id="specialty" required >
+                <option value="choose" disabled selected>Оберіть Спеціальність</option>
+                <option value="ik"> Інформаційно-комунікаційні системи </option>
+                <option value="an"> Aвіоніка </option>
+                <option value="tr"> Телекомунікаційні технології </option>
+                <option value="bi"> Біомедична інженерія </option>
+                <option value="el"> Електроніка </option>
+                <option value="mn"> Мікро- та наносистемна техніка </option>
             </select>
-            <select class="field" name="teacher" required >
-                <option disabled selected>Оберіть Викладача</option>
-                <option>Прудиус Іван Никифорович</option>
-                <option>Озірковський Леонід Деонісійович</option>
-                <option>Стрихалюк Богдан Михайлович</option>
-                <option>Фаст Володимир Миколайович</option>
-                <option>Бобицький Ярослав Васильович</option>
-                <option>Готра Зенон Юрійович</option>
-                <option>Дружинін Анатолій Олександрович</option>
-                <option>Кіселичник Мирослав Дмитрович</option>
-                <option>Климаш Михайло Миколайович</option>
-                <option>Романишин Юрій Михайлович</option>
-                <option>Оборжицький Валерій Іванович</option>
-                <option>Колодій Роман Степанович</option>
-                <option>Кремер Ірина Петрівна</option>
-                <option>Малик Орест Петрович</option>
-                <option>Сторож Володимир Георгійович</option>
-                <option>Островський Ігор Петрович</option>
-                <option>Павликевич Маркіян Йосипович</option>
-                <option>Павлиш Володимир Андрійович</option>
-                <option>Романчук Василь Іванович</option>
-                <option>Фітьо Володимир Михайлович</option>
-                <option>Якубенко Василь Миколайович</option>
-                <option>Нічкало Степан  Ігорович</option>
+            <select class="field" name="teacher" id="teacher" required >
             </select>
-            <p class="field_q"> Чи подобається вам якість викладання та чи актуальний матеріал викладається?</p>
-            <div>
+            <!---<div>
                 <p class="value">0</p>
                 <p class="value">1</p>
                 <p class="value">2</p>
@@ -81,25 +43,11 @@ window.location = elm.value+".html";
                 <p class="value">9</p>
                 <p class="value">10</p>
             </div>
-            <input type="range" name="Оцінка (0-10)" min="0" max="10" value="5" class="slider">
-            <p class="field_q"> Яке ставлення викладача до студентів?</p>
-            <div>
-                <p class="value">0</p>
-                <p class="value">1</p>
-                <p class="value">2</p>
-                <p class="value">3</p>
-                <p class="value">4</p>
-                <p class="value">5</p>
-                <p class="value">6</p>
-                <p class="value">7</p>
-                <p class="value">8</p>
-                <p class="value">9</p>
-                <p class="value">10</p>
-            </div>
-            <input type="range" name="Оцінка (0-10)" min="0" max="10" value="5" class="slider">
-           <textarea rows="5" cols="30" minlength="0" maxlength="365" class="field_text" name="Відгук" placeholder="Коментар (0-365 символів)" ></textarea>
+            <input type="range" name="Оцінка (0-10)" min="0" max="10" value="5" class="slider">-->
             <br>
-            <button class="button" >Відправити</button>
+            <textarea rows="5" cols="30" minlength="0" maxlength="365" class="field_text" name="comment" placeholder="Коментар (0-365 символів)" ></textarea>
+            <br>
+            <button name="sub"class="button" >Відправити</button>
         </form>
     </div>
     <script src="js/index.js"></script>
