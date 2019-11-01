@@ -45,13 +45,7 @@ body{
     width: 40%;
     height: 50px;
 }
-.field_q{
-    margin: 0 auto;
-    display: block;
-    border-radius: 10px;
-    width: 40%;
-    height: 50px;
-}
+
 .field_text{
     margin: 0 auto;
     display: block;
@@ -60,41 +54,17 @@ body{
     width: 39.5%;
     height: 50px;
 }
-.field_name{
-    margin: auto;
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    width: 40%;
-    height: 50px;
-}
-form div .low_mark{
-    left: 0;
-    display: inline-block;
-}
-form div .high_mark{
-    position: relative;
-    right: 0;
-    margin-left: 93%;
-    display: inline-block;
-}
-form div .value{
-    position: relative;
-    display: inline-block;
-    width: 16.885%;
-    font-family: 'Josefin Sans', sans-serif;
-}
-form div .value_grid{
-    display: grid;
-    grid-template-columns: 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px;
-}
+
+
 form div {
     margin-bottom: 10px;
     width: 40%;
 }
 form div .question{
     text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 p{
@@ -104,14 +74,11 @@ p{
 }
 form div .slider {
     margin-bottom: 15px;
-    display: inline-block;
-    height: 15px;
+    height: 40px;
     width: 100%;
-    border-radius: 5px;
-    outline: none;
-    opacity: 0.7;
-
-    transition: opacity .2s;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
 }
 
 .button{
@@ -123,10 +90,11 @@ form div .slider {
     cursor: pointer;
     background-color: #ffffff;
     display: flex;
+    height: 25px;
     width: 115px;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 8px;
     margin: auto;
     color: black;
 }
