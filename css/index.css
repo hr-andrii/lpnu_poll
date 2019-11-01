@@ -4,7 +4,7 @@ body{
 }
 @media (min-height: 500px) {
     body {
-        height: 970px;
+        height: 1020px;
     }
 }
 @media (min-height: 1335px) {
