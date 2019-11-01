@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+    <title>LPNU_POLL</title>
 
 </head>
 <body>
     <div class="poll">
+
+        <h1 class="header_text">Форма для оціювання якості викладання</h1>
+        <h1 class="header_text">Національний університет "Львівська політехніка"</h1>
         <a href="">
-            <h1 class="theme_of_page">Форма для оціювання якості викладання</h1>
-            <h1 class="name_of_univers">Національний університет "Львівська політехніка"</h1>
             <img src="img/logo.png" alt="Логотип НУЛП, щоб перейти на сайт натисніть">
         </a>
-        <form action="accept.php" method="POST">
+
+        <form action="https://formspree.io/hr.andriygtr@gmail.com" method="POST">
             <select class="field" name="institute">
                 <option value="itre" selected>Інститут телекомунікацій, радіоелектроніки та електронної техніки</option>
             </select>
+
             <select class="field" name="specialty" id="specialty" required >
                 <option value="choose" disabled selected>Оберіть Спеціальність</option>
                 <option value="ik"> Інформаційно-комунікаційні системи </option>
@@ -29,25 +32,39 @@
                 <option value="mn"> Мікро- та наносистемна техніка </option>
             </select>
             <select class="field" name="teacher" id="teacher" required >
+
             </select>
-            <!---<div>
-                <p class="value">0</p>
-                <p class="value">1</p>
-                <p class="value">2</p>
-                <p class="value">3</p>
-                <p class="value">4</p>
-                <p class="value">5</p>
-                <p class="value">6</p>
-                <p class="value">7</p>
-                <p class="value">8</p>
-                <p class="value">9</p>
-                <p class="value">10</p>
+
+            <div>
+                <p class="question">Оцініть якість викладання (0-10)</p>
+                <p><input type="range" name="Оцінка (0-10)" min="0" max="10" value="5" class="slider" onchange="document.getElementById('rangeValueFirst').innerHTML = this.value;" list="rangeListFirst"> <span id="rangeValueFirst">5</span></p>
+                <datalist id="rangeListFirst">
+                <option value="0" label="0">
+                <option value="2" label="2">
+                <option value="4" label="4">
+                <option value="6" label="6">
+                <option value="8" label="8">
+                <option value="10" label="10">
+                </datalist>
             </div>
-            <input type="range" name="Оцінка (0-10)" min="0" max="10" value="5" class="slider">-->
+
+            <div>
+                <p class="question">Оцініть ставлення викладача до студентів (0-10) </p>
+                <p><input type="range" name="Оцінка (0-10)" min="0" max="10" value="5" class="slider" onchange="document.getElementById('rangeValueSecond').innerHTML = this.value;" list="rangeListSecond"> <span id="rangeValueSecond">5</span></p>
+                <datalist id="rangeListSecond">
+                <option value="0" label="0">
+                <option value="2" label="2">
+                <option value="4" label="4">
+                <option value="6" label="6">
+                <option value="8" label="8">
+                <option value="10" label="10">
+                </datalist>
+            </div>
+
             <br>
             <textarea rows="5" cols="30" minlength="0" maxlength="365" class="field_text" name="comment" placeholder="Коментар (0-365 символів)" ></textarea>
             <br>
-            <button name="sub"class="button" >Відправити</button>
+            <button class="button" >Відправити</button>
         </form>
     </div>
     <script src="js/index.js"></script>

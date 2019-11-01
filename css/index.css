@@ -2,29 +2,9 @@ body{
     background: linear-gradient(rgb(226, 219, 219),#1944bb);
     height: 725px;
 }
-@media (min-width: 320px) {
+@media (min-height: 500px) {
     body {
-        height: 920px;
-    }
-}
-@media (min-width: 370px) {
-    body {
-        height: 920px;
-    }
-}
-@media (min-width: 410px) {
-    body {
-        height: 938px;
-    }
-}
-@media (min-height: 811px) {
-    body {
-        height: 895px;
-    }
-}
-@media (min-height: 1024px) {
-    body {
-        height: 1026px;
+        height: 970px;
     }
 }
 @media (min-height: 1335px) {
@@ -33,81 +13,17 @@ body{
     }
 }
 
-@media (min-width: 1090px) {
-    body {
-        height: 950px;
-    }
-}
-.theme_of_page
+.header_text
 {
-    margin-left: 20%;
-    margin-top: 80px;
+    width: 100%;
+    text-align: center;
     color: black;
     text-decoration: none;
     font-size: 1rem;
     display: inline-block;
-    position: absolute;
     font-family: 'Josefin Sans', sans-serif;
 }
-.name_of_univers
-{
-    right: 0;
-    margin-right: 15%;
-    margin-top: 80px;
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    display: inline-block;
-    position: absolute;
-    font-family: 'Josefin Sans', sans-serif;
-}
-@media (max-width: 1500px) {
-    .theme_of_page
-    {
-        position: relative;
-    }
-}
-@media (max-width: 1200px) {
-    .theme_of_page
-    {
-        margin-left: 0;
-        margin-top: 40px;
-        position: relative;
-        display: block;
-        text-align: center;
-    }
-    .name_of_univers{
-        right: 34%;
-        margin: auto;
-        text-align: center;
-    }
-    .poll a img{
-        margin-top: 50px;
-    }
-}
-@media (max-width: 500px) {
-    .theme_of_page
-    {
-        margin-left: 0;
-        margin-top: 40px;
-        position: relative;
-        display: block;
-        text-align: center;
-    }
-    .name_of_univers{
-        right: 4%;
-        margin: auto;
-        text-align: center;
-    }
-    .poll a img{
-        margin-top: 50px;
-    }
-}
 
-
-.logo img{
-    width: 100px;
-}
 .poll{
     margin-top: 30px;
 }
@@ -153,65 +69,44 @@ body{
     width: 40%;
     height: 50px;
 }
-.value{
+form div .low_mark{
+    left: 0;
     display: inline-block;
-    margin-right: 4.2%;
+}
+form div .high_mark{
+    position: relative;
+    right: 0;
+    margin-left: 93%;
+    display: inline-block;
+}
+form div .value{
+    position: relative;
+    display: inline-block;
+    width: 16.885%;
     font-family: 'Josefin Sans', sans-serif;
 }
+form div .value_grid{
+    display: grid;
+    grid-template-columns: 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px;
+}
 form div {
-    margin-top: -25px;
     margin-bottom: 10px;
+    width: 40%;
+}
+form div .question{
+    text-align: center;
 }
 
-@media (max-width: 1199px) {
-    .value {
-        margin-right: 3.9%;
-    }
-}
-@media (max-width: 1024px) {
-    .value {
-        margin-right: 3.5%;
-    }
-}
-@media (max-width: 768px) {
-    .value {
-        margin-right: 2.9%;
-    }
-}
-@media (max-width: 414px) {
-    .value {
-        margin-right: 0.5%;
-    }
-}
-@media (max-width: 375px) {
-    .value {
-        margin-right: 0;
-    }
-}
-@media (max-width: 360px) {
-    .value {
-        margin-right: -0.2%;
-    }
-}
-@media (max-width: 320px) {
-    .value {
-        margin-right: -1%;
-    }
-}
 p{
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
 }
-.slider {
-
-    width: 39%;
-    position: absolute;
+form div .slider {
     margin-bottom: 15px;
-    margin-top: -23px;
-    margin-left: 30%;
     display: inline-block;
     height: 15px;
+    width: 100%;
     border-radius: 5px;
     outline: none;
     opacity: 0.7;
